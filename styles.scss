@@ -23,8 +23,8 @@ h1{
 
 /* main section */
 main{
-    width: 60vw;
-    min-height: 60vh;
+    width: 1152px;
+    height: 70vh;
     display: flex;
     background-color: white;
     border-radius: 2rem;
@@ -36,10 +36,9 @@ main{
 .left{
     background:url('./images/illustration-woman-online-desktop.svg'),url('./images/bg-pattern-desktop.svg');
     background-repeat: no-repeat;
-    background-position: -75px center,-576px 69%;
+    background-position: -75px center,-576px 77%;
     position: relative;
-    flex:1 1 auto;
-
+width: 50%;
     img{
         position: absolute;
         top:43%;
@@ -53,11 +52,13 @@ main{
 .right{
     display: flex;
     flex-direction: column;
-    margin:100px 0px 100px 20px;
+    align-items: flex-start;
+width: 48%; 
+   margin: 100px -100px 0px 0px;
     .title{
         h1{
             font-weight: 700;
-            font-size: 50px;
+            font-size: 40px;
             color: hsl(237, 12%, 33%);
         }
     }
@@ -73,15 +74,21 @@ main{
             flex-direction: column;
             h2{
                 color: hsl(240, 6%, 50%);
-                letter-spacing: 2px;
+                font-weight: 400;
+                letter-spacing: 1px;
                 display: inline-block;
                 padding:10px 0px;
+                img{
+                    float:right;
+                    cursor: pointer;
+                }
             }
-           
             p{
                 color: hsl(240, 6%, 50%);
+                display: none;
+                font-size: 15px;
+                line-height: 30px;
             }
-            
         }
     }
 }
@@ -90,4 +97,9 @@ main{
 .attribution{
     position: absolute;
     bottom:20px;
+}
+
+/* media query */
+@media screen and (max-width:1282px){
+    
 }
