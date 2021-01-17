@@ -98,6 +98,14 @@
 	</div>
 	<script>
 		function toggle(el) {
+			if(el.parentElement.childNodes[1].style.transform === "rotate(180deg)"){
+				var p = el.parentElement.parentElement.querySelector('p');
+				p.style.display = 'none';
+				var h2 = el.parentElement;
+				h2.style.fontWeight = "400";
+				h2.childNodes[1].style.transform = "rotate(0deg)";
+			}
+			else{
 			var nodes = el.parentElement.parentElement.parentElement.childNodes;
 			for (var i = 0; i < nodes.length; i++) {
 				if (nodes[i].childNodes.length > 0) {
@@ -109,8 +117,9 @@
 			var p = el.parentElement.parentElement.querySelector('p');
 			p.style.display = ((p.style.display != 'block') ? 'block' : 'none');
 			var h2 = el.parentElement;
-			h2.style.fontWeight = ((h2.style.fontWeight != "700") ? "700" : "400");
+			h2.style.fontWeight = ((h2.style.fontWeight != "700") ? "700" : "400");			
 			h2.childNodes[1].style.transform = "rotate(180deg)";
+			}
 		}
 	</script>
 </body>
