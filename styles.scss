@@ -73,7 +73,7 @@ width: 48%;
             display: flex;
             flex-direction: column;
             h2{
-                color: hsl(240, 6%, 50%);
+                color: hsl(238, 29%, 16%);
                 font-weight: 400;
                 letter-spacing: 1px;
                 display: inline-block;
@@ -101,5 +101,36 @@ width: 48%;
 
 /* media query */
 @media screen and (max-width:1282px){
-    
+    main{
+        flex-direction: column;
+        align-items:   center ;
+        min-height: 70vh;
+        max-width: 375px;
+    }
+    .left{
+        background:url('./images/illustration-woman-online-mobile.svg'),url('./images/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center top,center 108px;
+        height: 50%;
+        width: 100%;
+        margin-top:-29%;
+       img{
+            visibility: hidden;
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:100%;    
+        width: 90%;
+        margin: 0px -100px 0px -100px;
+        .questions{
+        .qa{
+            p{
+                font-size: 12px;
+            }
+        }
+ 
+       }   }
 }
